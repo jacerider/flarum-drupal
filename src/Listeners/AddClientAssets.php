@@ -1,14 +1,6 @@
 <?php
-/**
- *  This file is part of extum/flarum-ext-material.
- *
- *  Copyright (c) 2018 .
- *
- *
- *  For the full copyright and license information, please view the LICENSE.md
- *  file that was distributed with this source code.
- */
-namespace Extum\MDL\Listeners;
+
+namespace JaceRider\FlarumDrupal\Listeners;
 
 use DirectoryIterator;
 use Flarum\Event\ConfigureLocales;
@@ -24,6 +16,7 @@ class AddClientAssets
      */
     public function subscribe(Dispatcher $events)
     {
+        die;
         $events->listen(ConfigureWebApp::class, [$this, 'configureWebApp']);
         $events->listen(ConfigureLocales::class, [$this, 'addLocales']);
     }
@@ -66,6 +59,7 @@ class AddClientAssets
      */
     public function addLocales(ConfigureLocales $event)
     {
+        die;
         foreach (new DirectoryIterator(__DIR__.'/../../resources/locale') as $file) {
             if ($file->isFile() && in_array($file->getExtension(), ['yml', 'yaml'])) {
                 $event->locales->addTranslations($file->getBasename('.'.$file->getExtension()), $file->getPathname());

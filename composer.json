@@ -2,6 +2,7 @@
     "name": "jacerider/flarum-drupal",
     "description": "Flarum Drupal alterations.",
     "keywords": ["flarum-extension", "flarum", "drupal"],
+    "type": "flarum-extension",
     "license": "MIT",
     "authors": [
         {
@@ -9,7 +10,6 @@
             "email": "jacerider@gmail.com"
         }
     ],
-    "type": "project",
     "require": {
         "flarum/core": "^0.1.0-beta-7"
     },
