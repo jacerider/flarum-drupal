@@ -1,0 +1,26 @@
+{
+    "name": "jacerider/flarum-drupal",
+    "description": "Flarum Drupal alterations.",
+    "keywords": ["flarum-extension", "flarum", "drupal"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "JaceRider",
+            "email": "jacerider@gmail.com"
+        }
+    ],
+    "type": "project",
+    "require": {
+        "flarum/core": "^0.1.0-beta-7"
+    },
+    "autoload": {
+        "psr-4": {
+            "JaceRider\\FlarumDrupal\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Flarum"
+        }
+    }
+}
