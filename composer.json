@@ -20,7 +20,7 @@
     },
     "extra": {
         "flarum-extension": {
-            "title": "Flarum",
+            "title": "Drupal",
             "icon": {
                 "name": "fas fa-smile",
                 "backgroundColor": "#238c59",

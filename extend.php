@@ -7,9 +7,9 @@
 
 namespace JaceRider\FlarumDrupal;
 
-use Flarum\Extend\Frontend;
-use JaceRider\FlarumDrupal\Listeners\AddClientAssets;
+use Flarum\Extend;
+use JaceRider\FlarumDrupal\Listeners;
 
 return [
-    (new Frontend('forum'))->content(AddClientAssets::class),
+    (new Extend\Frontend('forum'))->content(Listeners\AddClientAssets::class)
 ];
